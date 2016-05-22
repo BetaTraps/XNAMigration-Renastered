@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuCelebrate.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuCelebrate.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuDamageDeath.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuDamageDeath.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuIdle.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuIdle.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuJump.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuJump.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuWalk.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuWalk.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuYell.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuYell.xnb</Output>
       <Time>2016-05-10T15:16:54-07:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile1.xnb</Output>
       <Time>2016-05-19T14:51:56-07:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile2.xnb</Output>
       <Time>2016-05-19T14:52:04-07:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile3.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile3.xnb</Output>
       <Time>2016-05-19T14:52:08-07:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile4.xnb</Output>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile4.xnb</Output>
       <Time>2016-05-19T14:52:16-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -98,10 +98,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>G:\XNAMigration-Renastered\XNAMigration\XNAMigrationContent\</RootDirectory>
-      <LoggerRootDirectory>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\</LoggerRootDirectory>
-      <IntermediateDirectory>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>G:\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigrationContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

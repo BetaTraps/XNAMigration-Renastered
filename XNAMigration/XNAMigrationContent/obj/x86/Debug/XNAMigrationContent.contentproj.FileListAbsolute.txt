@@ -4,3 +4,4 @@ E:\XNAMigration\XNAMigration\XNAMigrationContent\obj\x86\Debug\XNAMigrationConte
 E:\XNAMigration-final\XNAMigration\XNAMigrationContent\obj\x86\Debug\XNAMigrationContent.contentprojResolveAssemblyReference.cache
 E:\XNAMigration-final - Copy\XNAMigration\XNAMigrationContent\obj\x86\Debug\XNAMigrationContent.contentprojResolveAssemblyReference.cache
 G:\XNAMigration-Renastered\XNAMigration\XNAMigrationContent\obj\x86\Debug\XNAMigrationContent.contentprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigrationContent\obj\x86\Debug\XNAMigrationContent.contentprojResolveAssemblyReference.cache

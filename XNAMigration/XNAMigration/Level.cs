@@ -27,7 +27,6 @@ namespace XNAMigration
             doc.Load(Path);
             XmlNode nodes;
             string xPath;
-            List<string> lines = new List<string>();
             
 
             XmlNodeList xnList = doc.SelectNodes("/map/tileset");
@@ -50,7 +49,10 @@ namespace XNAMigration
             xPath = "/map/layer/data";
             nodes = doc.SelectSingleNode(xPath);
             string Data = nodes.InnerText;
-            line = Data.Split(',');
+            //Data.Split('r').Join<string>;
+            //Data.Remove('\r');
+            line = Data.Split(new[] { Environment.NewLine },
+                                     StringSplitOptions.RemoveEmptyEntries);
             foreach (string word in line)
                 Console.Write(word);
 
@@ -66,38 +68,26 @@ namespace XNAMigration
 
             Console.WriteLine("ARRAY WIDTH: " + Width);
             Console.WriteLine("ARRAY HEIGHT: " + Height);
-            int count = 0;
-            int j = 0;
-            string newLine = null;
-            for (int x = 0; x != (Width*Height); x++)
-            {
-                if (count <= 19)
-                {
-                     newLine += line[x];
-                     //Console.Write(line[x]);
-                     count++;
-                }
-                else
-                {     
-                   lines.Add(newLine);   
 
-                   
-                   newLine = null;
-                    count = 0;
-                }
-            }
-            for (int x = 0; x != 19; x++)
+            string tempStoreage;
+            string[] newLine = new string[Width];
+
+            for(int x = 0; x <= Height-1;x++)
             {
-                Console.WriteLine(lines[x]);
+                tempStoreage = line[x];
+                
+                //newLine[x] = tempStoreage.Split(',');
             }
 
-                tiles = new Tile[Width, Height];
+            int[][] tileData = new int[Height][];
 
-            for (int y = 0; y < Height; y++)
+            for (int y = 0; y <= Height - 1; y++ )
             {
-                for (int x = 0; x < Width; x++)
+                tileData[y] = new int[Width];
+                for (int x = 0; x <= Width - 1; x++)
                 {
-                    char TileType;
+
+                    //tileData[y][x] = int.Parse(line[y].);
                 }
             }
             Console.WriteLine();
