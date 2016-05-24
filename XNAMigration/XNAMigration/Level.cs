@@ -69,25 +69,19 @@ namespace XNAMigration
             Console.WriteLine("ARRAY WIDTH: " + Width);
             Console.WriteLine("ARRAY HEIGHT: " + Height);
 
-            string tempStoreage;
-            string[] newLine = new string[Width];
-
-            for(int x = 0; x <= Height-1;x++)
-            {
-                tempStoreage = line[x];
-                
-                //newLine[x] = tempStoreage.Split(',');
-            }
 
             int[][] tileData = new int[Height][];
+            
 
             for (int y = 0; y <= Height - 1; y++ )
             {
+                string[] tempStorage = line[y].Split(',');
                 tileData[y] = new int[Width];
                 for (int x = 0; x <= Width - 1; x++)
                 {
 
-                    //tileData[y][x] = int.Parse(line[y].);
+                    tileData[y][x] = int.Parse(tempStorage[x]);
+                    //Console.WriteLine(tileData[y][x]);
                 }
             }
             Console.WriteLine();
