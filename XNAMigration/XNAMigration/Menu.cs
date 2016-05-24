@@ -5,36 +5,35 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-
+using Microsoft.Xna.Framework.Input;
 
 namespace XNAMigration
 {
-    class Enemy
+    class Menu: ScreenState
     {
-        AnimationPlayer animationPlayer;
-          //Animation class to set the the current animation
+        Texture2D playButton;
 
-        Rectangle HitBox;
-        Vector2 Pos = Vector2.Zero;
-        Vector2 Velocity;
-
-        String Direction;
-
-        public Enemy() { }
-
-        public void Load(ContentManager Content)
+        public Menu()
         {
 
         }
 
-        public void Update(GameTime gameTime)
+        public void Load(ContentManager Content)
         {
+              //loads the buttons images
+        }
 
+        public void Update(Game game)
+        {
+            MouseState mouse;
+            game.IsMouseVisible = true;
+            
+               //allows mouseinput and checks if button clicked
         }
 
         public void Draw(SpriteBatch sprite)
         {
-
+               //draws the buttons
         }
     }
 }

@@ -92,6 +92,31 @@ namespace XNAMigration
             }
             Console.WriteLine();
             Console.WriteLine("========================================");
-         }   
+         }
+
+        private void getTiles()
+        {
+
+        }
+
+        public void Collision()
+        {
+
+        }
+
+        public void Load(ContentManager Content)
+        {
+
+        }
+
+        public void Update(GameTime gameTime)
+        {
+
+        }
+
+        public void Draw(SpriteBatch sprite)
+        {
+
+        }
     }
 }
