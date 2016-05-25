@@ -8,13 +8,31 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace XNAMigration
 {
-    public class Tile
+    struct Tile
     {
-        Texture2D Texture;
-        int Width;
-        int Height;
+        private Texture2D Texture;
+        public Texture2D TEXTURE
+        {
+            get { return Texture; }
+        }
 
-        int ID;
+         int Width;
+        public int WIDTH
+        {
+            get { return Width; }
+        }
+
+         int Height;
+        public int HEIGHT
+        {
+            get { return Height; }
+        }
+
+        //private int ID;
+        //public int id
+        //{
+        //    get { return ID; }
+        //}
 
         static ContentManager content;
         public static ContentManager Content
@@ -22,12 +40,17 @@ namespace XNAMigration
             set { content = value; }
         }
 
-        public Tile(int ID,string TileName, int TileWidth, int TileHeight)
+        Vector2 size;
+        public Vector2 Size
         {
-            Texture = content.Load<Texture2D>(TileName);
-            this.ID = ID;
+            get { return size; }
+        }
+        public Tile(Texture2D TileName, int TileWidth, int TileHeight)
+        {
+            Texture = TileName;
             this.Width = TileWidth;
             this.Height = TileHeight;
+            size = new Vector2(Width, Height);
         }
     }
 }

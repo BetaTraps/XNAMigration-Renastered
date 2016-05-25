@@ -14,9 +14,15 @@ namespace XNAMigration
     {
         List<Tile> Tiles = new List<Tile>();
         Tile[,] tiles;
+        int[][] tileData;
+        int Width;
+        int Height;
 
-        public Level()
+        ContentManager Content;
+
+        public Level(ContentManager content)
         {
+            Content = content;
             LoadTiles("content/test.tmx");
         }
         
@@ -42,7 +48,7 @@ namespace XNAMigration
                 int tileHeight = int.Parse(xn.Attributes["tileheight"].InnerText);
                 Console.WriteLine("Tile Height: " + tileHeight);
 
-                Tiles.Add(new Tile(id, tileName, tileWidth, tileHeight));
+                //Tiles.Add(new Tile(tileName, tileWidth, tileHeight));
             }
 
             Console.WriteLine("=====================MAP DATA==========================");
@@ -63,14 +69,14 @@ namespace XNAMigration
             xPath = "/map/layer";
             nodes = doc.SelectSingleNode(xPath);
 
-            int Width = int.Parse(nodes.Attributes["width"].InnerText);
-            int Height = int.Parse(nodes.Attributes["height"].InnerText);
+            Width = int.Parse(nodes.Attributes["width"].InnerText);
+            Height = int.Parse(nodes.Attributes["height"].InnerText);
 
             Console.WriteLine("ARRAY WIDTH: " + Width);
             Console.WriteLine("ARRAY HEIGHT: " + Height);
 
 
-            int[][] tileData = new int[Height][];
+            tileData = new int[Height][];
             
 
             for (int y = 0; y <= Height - 1; y++ )
@@ -81,16 +87,41 @@ namespace XNAMigration
                 {
 
                     tileData[y][x] = int.Parse(tempStorage[x]);
-                    //Console.WriteLine(tileData[y][x]);
                 }
             }
+
+            tiles = new Tile[Width,Height];
+
+            for (int y = 0; y <= Height - 1; y++)
+            {
+                for (int x = 0; x <= Width - 1; x++)
+                {
+                    tiles[x, y] = getTiles(tileData[x][y],x,y);
+                }
+            }
+
             Console.WriteLine();
             Console.WriteLine("========================================");
          }
 
-        private void getTiles()
+        private Tile getTiles(int number,int x, int y)
         {
-
+            switch(number)
+            {
+                case 0:
+                    return new Tile(null, 32, 32);
+                case 1://Tile 1
+                    return new Tile(Content.Load<Texture2D>("Tile1"), 32, 32);    
+                case 2://Tile 2
+                    return new Tile(Content.Load<Texture2D>("Tile2"), 32, 32);   
+                case 3://Tile 3
+                    return new Tile(Content.Load<Texture2D>("Tile3"), 32, 32);
+                case 4://Tile 4
+                    return new Tile(Content.Load<Texture2D>("Tile4"), 32, 32);
+                default:
+                    throw new NotSupportedException(String.Format("Unsupported tile type character '{0}' at position {1}, {2}.", number,x,y));
+            }
+            //return new Tile("Tile1", Tiles[1].WIDTH, Tiles[1].HEIGHT);
         }
 
         public void Collision()
@@ -108,9 +139,21 @@ namespace XNAMigration
 
         }
 
-        public void Draw(SpriteBatch sprite)
+        public void DrawTiles(SpriteBatch sprite)
         {
-
+            for (int y = 0; y < Height; y++)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    Texture2D texture = tiles[y,x].TEXTURE;
+                    if (texture != null)
+                    {
+                       Vector2 pos = new Vector2(x, y) * tiles[y,x].Size;
+                       sprite.Draw(texture, pos, Color.White);
+                    }
+                    
+                }
+            }
         }
     }
 }

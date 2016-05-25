@@ -45,7 +45,7 @@ namespace XNAMigration
 
             Tile.Content = Content;
 
-            level = new Level();
+            level = new Level(Content);
 
             camera = new Camera(GraphicsDevice.Viewport);
 
@@ -80,6 +80,8 @@ namespace XNAMigration
 
             //*This is to Render The Camera*spriteBatch.Begin(SpriteSortMode.Deferred,BlendState.AlphaBlend, null, null, null, null, camera.Transform);
             spriteBatch.Begin();
+
+            level.DrawTiles(spriteBatch);
             
             player.Draw(gameTime, spriteBatch);
             spriteBatch.End();
