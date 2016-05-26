@@ -12,7 +12,6 @@ namespace XNAMigration
 {
     class Level
     {
-        List<Tile> Tiles = new List<Tile>();
         Tile[,] tiles;
         int[][] tileData;
         int Width;
