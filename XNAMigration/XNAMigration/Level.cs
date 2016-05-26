@@ -90,13 +90,13 @@ namespace XNAMigration
                 }
             }
 
-            tiles = new Tile[Width,Height];
+            tiles = new Tile[Width+1,Height+1];
 
             for (int y = 0; y <= Height - 1; y++)
             {
                 for (int x = 0; x <= Width - 1; x++)
                 {
-                    tiles[x, y] = getTiles(tileData[x][y],x,y);
+                    tiles[x, y] = getTiles(tileData[y][x],x,y);
                 }
             }
 
@@ -139,16 +139,21 @@ namespace XNAMigration
 
         }
 
+        public void Draw(SpriteBatch sprite)
+        {
+
+        }
+
         public void DrawTiles(SpriteBatch sprite)
         {
             for (int y = 0; y < Height; y++)
             {
                 for (int x = 0; x < Width; x++)
                 {
-                    Texture2D texture = tiles[y,x].TEXTURE;
+                    Texture2D texture = tiles[x,y].TEXTURE;
                     if (texture != null)
                     {
-                       Vector2 pos = new Vector2(x, y) * tiles[y,x].Size;
+                       Vector2 pos = new Vector2(x, y) * tiles[x,y].Size;
                        sprite.Draw(texture, pos, Color.White);
                     }
                     
