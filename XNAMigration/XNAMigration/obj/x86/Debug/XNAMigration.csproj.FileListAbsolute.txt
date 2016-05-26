@@ -145,3 +145,6 @@ C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86
 C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86\Debug\XNAMigration.exe
 C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\obj\x86\Debug\XNAMigration.pdb
+C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Attack.xnb
+C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\idle.xnb
+C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Run.xnb

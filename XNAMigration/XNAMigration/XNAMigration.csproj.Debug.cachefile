@@ -8,6 +8,9 @@ Content\Tile1.xnb
 Content\Tile2.xnb
 Content\Tile3.xnb
 Content\Tile4.xnb
+Content\Attack.xnb
+Content\idle.xnb
+Content\Run.xnb
 Content\mikuCelebrate.png
 Content\mikuDamageDeath.png
 Content\mikuIdle.png

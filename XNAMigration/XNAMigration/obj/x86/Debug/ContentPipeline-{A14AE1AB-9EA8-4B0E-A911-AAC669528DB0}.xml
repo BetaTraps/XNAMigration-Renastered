@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuCelebrate.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.4937148-07:00</Time>
     </Item>
     <Item>
       <Source>mikuDamageDeath.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuDamageDeath.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.4947146-07:00</Time>
     </Item>
     <Item>
       <Source>mikuIdle.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuIdle.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.4957166-07:00</Time>
     </Item>
     <Item>
       <Source>mikuJump.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuJump.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.4957166-07:00</Time>
     </Item>
     <Item>
       <Source>mikuWalk.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuWalk.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.496716-07:00</Time>
     </Item>
     <Item>
       <Source>mikuYell.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\mikuYell.xnb</Output>
-      <Time>2016-05-10T15:16:54-07:00</Time>
+      <Time>2016-05-26T11:47:45.4977167-07:00</Time>
     </Item>
     <Item>
       <Source>Tile1.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2016-05-19T14:51:56-07:00</Time>
+      <Time>2016-05-26T11:47:45.4868013-07:00</Time>
     </Item>
     <Item>
       <Source>Tile2.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2016-05-19T14:52:04-07:00</Time>
+      <Time>2016-05-26T11:47:45.4878025-07:00</Time>
     </Item>
     <Item>
       <Source>Tile3.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile3.xnb</Output>
-      <Time>2016-05-19T14:52:08-07:00</Time>
+      <Time>2016-05-26T11:47:45.4887087-07:00</Time>
     </Item>
     <Item>
       <Source>Tile4.png</Source>
@@ -89,7 +89,34 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Tile4.xnb</Output>
-      <Time>2016-05-19T14:52:16-07:00</Time>
+      <Time>2016-05-26T11:47:45.4897256-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Attack.png</Source>
+      <Name>Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Attack.xnb</Output>
+      <Time>2016-05-26T11:47:45.4848012-07:00</Time>
+    </Item>
+    <Item>
+      <Source>idle.png</Source>
+      <Name>idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\idle.xnb</Output>
+      <Time>2016-05-26T11:47:45.4937148-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Run.png</Source>
+      <Name>Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\David\Desktop\XNAMigration-Renastered\XNAMigration\XNAMigration\bin\x86\Debug\Content\Run.xnb</Output>
+      <Time>2016-05-26T11:47:45.4858019-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -130,7 +157,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2016-04-22T17:43:48.0489192-07:00</Value>
+        <Value>2016-04-26T10:52:03.842056-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
