@@ -16,7 +16,7 @@ namespace XNAMigration
         Animation Walk;
         Animation Idle;
         Animation Jump;
-        Animation Yell;
+        Animation Attack;
         Animation Celebrate;
 
         private bool Right = false;
@@ -30,6 +30,8 @@ namespace XNAMigration
 
         private String lastDirection = "Right";
 
+        List<Bullet> bullets = new List<Bullet>();
+
         private Vector2 Pos = Vector2.Zero;
         private Vector2 velocity;
         private Rectangle rect;
@@ -39,15 +41,15 @@ namespace XNAMigration
             get { return Pos; }
         }
 
-        public Player() { animationPlayer = new AnimationPlayer(); hasJumped = true; }
+        public Player() { animationPlayer = new AnimationPlayer(); hasJumped = false; }
 
         public void Load(ContentManager Content)
         {
 
-            Walk = new Animation(Content.Load<Texture2D>("mikuWalk"), 77, 75f, true);
-            Idle = new Animation(Content.Load<Texture2D>("mikuIdle"), 59, 100f, true);
+            Walk = new Animation(Content.Load<Texture2D>("Run"/*"mikuWalk"*/), /*77*/146, 75f, true);
+            Idle = new Animation(Content.Load<Texture2D>("idle"/*"mikuIdle"*/), /*59*/88, 100f, true);
             Jump = new Animation(Content.Load<Texture2D>("mikuJump"), 78, 150f, true);
-            Yell = new Animation(Content.Load<Texture2D>("mikuYell"), 85, 100f, true);
+            Attack = new Animation(Content.Load<Texture2D>("Attack"/*"mikuYell"*/), /*85*/174, 100f, true);
             Celebrate = new Animation(Content.Load<Texture2D>("mikuCelebrate"), 84, 100f, true);
         }
 
@@ -89,7 +91,7 @@ namespace XNAMigration
             if (isStanding)
                 animationPlayer.PlayAnimation(Idle);
             if (isShoot == true && isStanding == true)
-                animationPlayer.PlayAnimation(Yell);
+                animationPlayer.PlayAnimation(Attack);
 
             //if (isShoot == true && hasJumped == true)
             //animationPlayer.PlayAnimation(ShootJump);
@@ -158,10 +160,11 @@ namespace XNAMigration
         public void Draw(GameTime gameTime, SpriteBatch sprite)
         {
             SpriteEffects flip = SpriteEffects.None;
+            //Flip these to get the right orientatinon
 
-            if (lastDirection == "Right")
+            if (lastDirection == "Left")
                 flip = SpriteEffects.None;
-            else if (lastDirection == "Left")
+            else if (lastDirection == "Right")
                 flip = SpriteEffects.FlipHorizontally;
 
             animationPlayer.Draw(gameTime, sprite, Pos, flip);

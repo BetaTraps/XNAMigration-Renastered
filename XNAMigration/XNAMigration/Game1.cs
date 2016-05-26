@@ -48,8 +48,9 @@ namespace XNAMigration
             level = new Level(Content);
 
             camera = new Camera(GraphicsDevice.Viewport);
-
             player.Load(Content);
+
+            //level.Load(Content);
         }
 
         protected override void UnloadContent()
@@ -81,7 +82,7 @@ namespace XNAMigration
             //*This is to Render The Camera*spriteBatch.Begin(SpriteSortMode.Deferred,BlendState.AlphaBlend, null, null, null, null, camera.Transform);
             spriteBatch.Begin();
 
-            level.DrawTiles(spriteBatch);
+            level.Draw(spriteBatch);
             
             player.Draw(gameTime, spriteBatch);
             spriteBatch.End();

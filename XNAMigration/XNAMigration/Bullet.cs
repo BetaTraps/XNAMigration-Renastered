@@ -13,21 +13,18 @@ namespace XNAMigration
         Texture2D texture;
         Vector2 bulletPos;
         Vector2 OriginPos;
-        float bulletVelocity = 1.0f;
+        float bulletSpeed = 1.0f;
         ContentManager Content;
 
-        public Bullet(ContentManager content)
+        public Bullet()
         {
-            Content = content;
+            
         }
 
-        public Bullet() { }
-
-        public Vector2 setOriginPos
+        public void Load()
         {
-            set { OriginPos = value; }
-        }
 
+        }
         public void UpdateBullet()
         {
 

@@ -12,10 +12,28 @@ namespace XNAMigration
 {
     class Level
     {
+        List<Enemy> enemies = new List<Enemy>();
+        List<Items> items = new List<Items>();
+
         Tile[,] tiles;
         int[][] tileData;
         int Width;
+        public int WIDTH
+        {
+            get { return Width; }
+        }
+
         int Height;
+        public int HEIGHT
+        {
+            get { return Height; }
+        }
+
+        //Player player;
+        //public Player Player
+        //{
+        //    get { return player; }
+        //}
 
         ContentManager Content;
 
@@ -23,6 +41,7 @@ namespace XNAMigration
         {
             Content = content;
             LoadTiles("content/test.tmx");
+            //player = new Player();
         }
         
         string[] line;
@@ -120,17 +139,23 @@ namespace XNAMigration
                 default:
                     throw new NotSupportedException(String.Format("Unsupported tile type character '{0}' at position {1}, {2}.", number,x,y));
             }
-            //return new Tile("Tile1", Tiles[1].WIDTH, Tiles[1].HEIGHT);
         }
 
         public void Collision()
         {
-
+              //get posistion of the player
+            //get the coordinates of the forward facing edge,ect.
+            //loop through the tiles 
+            //add collision statements of the enemy and player
+            //SLOPES?
+            //STAIRS?
+            //Or ONE-WAY Platforms
+            //Refrences: http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/
         }
 
         public void Load(ContentManager Content)
         {
-
+            //player.Load(Content);
         }
 
         public void Update(GameTime gameTime)
@@ -140,7 +165,7 @@ namespace XNAMigration
 
         public void Draw(SpriteBatch sprite)
         {
-
+            DrawTiles(sprite);
         }
 
         public void DrawTiles(SpriteBatch sprite)
