@@ -8,6 +8,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace XNAMigration
 {
+    enum TileCollision
+    {
+        Passable = 0,
+        impassable = 1,
+        Platform = 2,
+    }
+
     struct Tile
     {
         private Texture2D Texture;
@@ -16,17 +23,11 @@ namespace XNAMigration
             get { return Texture; }
         }
 
-         int Width;
-        public int WIDTH
-        {
-            get { return Width; }
-        }
+        public TileCollision Collision;
 
-         int Height;
-        public int HEIGHT
-        {
-            get { return Height; }
-        }
+        public const int Width = 32;
+
+        public const int Height = 32;
 
         //private int ID;
         //public int id
@@ -40,17 +41,15 @@ namespace XNAMigration
             set { content = value; }
         }
 
-        Vector2 size;
+        public static Vector2 size = new Vector2(Width,Height);
         public Vector2 Size
         {
             get { return size; }
         }
-        public Tile(Texture2D TileName, int TileWidth, int TileHeight)
+        public Tile(Texture2D TileName, TileCollision collision)
         {
             Texture = TileName;
-            this.Width = TileWidth;
-            this.Height = TileHeight;
-            size = new Vector2(Width, Height);
+            Collision = collision;
         }
     }
 }

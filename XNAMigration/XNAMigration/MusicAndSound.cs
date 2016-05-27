@@ -28,6 +28,7 @@ namespace XNAMigration
             song = Content.Load<Song>(SongName); // load the song
 
             MediaPlayer.Play(song); // Start the song
+            MediaPlayer.IsRepeating = true;
         }
 
         public void LoadSoundEffect(string EffectName)

@@ -73,10 +73,13 @@ namespace XNAMigration
                 velocity.Y = -7f;
                 hasJumped = true; animationPlayer.PlayAnimation(Jump);
             }
-            float i = 1;
-            velocity.Y += 0.15f * i;
+            //float i = 1;
+            //velocity.Y += 0.15f * i;
 
-
+            if (isAttacking)
+            {
+                animationPlayer.PlayAnimation(Attack);
+            }
             
 
             if (hasJumped)
@@ -115,8 +118,9 @@ namespace XNAMigration
             else { Up = false; }
             if (keys.IsKeyDown(Keys.Down) || keys.IsKeyDown(Keys.S) || pad.ThumbSticks.Left.Y < 0) { Down = true; }
             else { Down = false; }
-            if (keys.IsKeyDown(Keys.C)) { isShoot = true; }
-            else { isShoot = false; }
+            if (keys.IsKeyDown(Keys.C)) { isAttacking = true; }
+            else { isAttacking = false; }
+            
 
 
         }

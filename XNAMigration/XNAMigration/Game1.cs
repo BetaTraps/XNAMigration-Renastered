@@ -25,6 +25,8 @@ namespace XNAMigration
 
         public Game1()
         {
+            //1280x720
+            
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             

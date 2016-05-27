@@ -78,7 +78,7 @@ namespace XNAMigration
             line = Data.Split(new[] { Environment.NewLine },
                                      StringSplitOptions.RemoveEmptyEntries);
             foreach (string word in line)
-                Console.Write(word);
+                Console.Write(0);
 
             Console.WriteLine();
             Console.WriteLine("=============ARRAY DATA=================");
@@ -127,38 +127,82 @@ namespace XNAMigration
             switch(number)
             {
                 case 0:
-                    return new Tile(null, 32, 32);
+                    return new Tile(null, TileCollision.Passable);
                 case 1://Tile 1
-                    return new Tile(Content.Load<Texture2D>("Tile1"), 32, 32);    
+                    return new Tile(Content.Load<Texture2D>("Tile1"), TileCollision.Platform);    
                 case 2://Tile 2
-                    return new Tile(Content.Load<Texture2D>("Tile2"), 32, 32);   
+                    return new Tile(Content.Load<Texture2D>("Tile2"), TileCollision.Platform);   
                 case 3://Tile 3
-                    return new Tile(Content.Load<Texture2D>("Tile3"), 32, 32);
+                    return new Tile(Content.Load<Texture2D>("Tile3"), TileCollision.Platform);
                 case 4://Tile 4
-                    return new Tile(Content.Load<Texture2D>("Tile4"), 32, 32);
+                    return new Tile(Content.Load<Texture2D>("Tile4"), TileCollision.Platform);
                 default:
                     throw new NotSupportedException(String.Format("Unsupported tile type character '{0}' at position {1}, {2}.", number,x,y));
             }
         }
 
-        public void Collision()
+        private Tile LoadStartTile(int x, int y)
         {
-              //get posistion of the player
-            //get the coordinates of the forward facing edge,ect.
-            //loop through the tiles 
-            //add collision statements of the enemy and player
-            //SLOPES?
-            //STAIRS?
-            //Or ONE-WAY Platforms
-            //Refrences: http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/
+            return new Tile(null, TileCollision.Passable);
         }
 
-        public void Load(ContentManager Content)
+        private Tile LoadExitTile(int x, int y)
         {
-            //player.Load(Content);
+            return new Tile(null, TileCollision.Passable);
+
+        }
+
+        private Tile LoadEnemyTile(int x, int y)
+        {
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        public void Dispose()
+        {
+            Content.Dispose();
+        }
+                                   
+        public TileCollision getCollision(int x, int y)
+        {
+            if (x < 0 || x >= Width)
+                return TileCollision.impassable;
+            if (y < 0 || y >= Height)
+                return TileCollision.Passable;
+
+            return tiles[x, y].Collision;
+        }
+
+        public Rectangle GetBounds(int x, int y)
+        {
+            return new Rectangle(x * Tile.Width, y * Tile.Height, Tile.Width, Tile.Height);
         }
 
         public void Update(GameTime gameTime)
+        {
+
+        }
+
+        private void UpdateItems()
+        {
+
+        }
+
+        private void UpdateEnemies()
+        {
+
+        }
+
+        private void reachExit()
+        {
+
+        }
+
+        private void collectKey()
+        {
+
+        }
+
+        private void playerKilled()
         {
 
         }
